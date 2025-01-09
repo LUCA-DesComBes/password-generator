@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>password generator</title>
+  </head>
+  <body>
+    <main>
+      <h1>Password Generator</h1>
+      <section>
+        <article class="first-art">
+          <p id="password">PTx1f5DaFX</p>
+          <button class="copy"><img src="./img/copy.svg" alt="copy" /></button>
+        </article>
+        <article class="last-art">
+          <hgroup>
+            <h2 class="Character">Character Length</h2>
+            <p class="letterLength">10</p>
+          </hgroup>
+          <input
+            type="range"
+            value="10"
+            min="0"
+            max="30"
+            name="characterLenght"
+            id="characterLenght"
+            maxlength="20"
+          />
+          <form action="get">
+            <label for="Uppercase">
+              <input
+                type="checkbox"
+                class="checkboxCheck"
+                name="Uppercase"
+                id="Uppercase"
+                checked
+              />
+              Include Uppercase Letters
+            </label>
+            <label for="Lowercase">
+              <input
+                type="checkbox"
+                class="checkboxCheck"
+                name="Lowercase"
+                id="Lowercase"
+                checked
+              />
+              Include Lowercase Letters
+            </label>
+            <label for="Numbers">
+              <input
+                type="checkbox"
+                class="checkboxCheck"
+                name="Numbers"
+                id="Numbers"
+                checked
+              />
+              Include Numbers
+            </label>
+            <label for="Symbols">
+              <input type="checkbox" name="Symbols" id="Symbols" />
+              Include Symbols
+            </label>
+            <div class="div-strength">
+              <h2 class="strength">STRENGTH</h2>
+              <div class="divDifficulté">
+                <p class="medium">MEDIUM</p>
+                <button class="niveauDifficulté"></button>
+                <button class="niveauDifficulté"></button>
+                <button class="niveauDifficulté"></button>
+                <button class="niveauNon"></button>
+              </div>
+            </div>
+            <div class="submit">
+              <button id="submit" type="submit" />GENERATE<img src="./img/fleche.svg" alt="fleche" /></button>
+            </div>
+          </form>
+        </article>
+      </section>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

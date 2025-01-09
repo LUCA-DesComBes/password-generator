@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", serif;
+}
+body {
+  background-color: #08070b;
+  color: #e6e5ea;
+  margin: 4rem 1rem;
+}
+h1 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #817d92;
+  margin-bottom: 16px;
+}
+main {
+  width: 100%;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.first-art {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 15px 15px 16px;
+  background-color: #24232c;
+}
+.copy {
+  cursor: pointer;
+  background-color: #24232c;
+  border: none;
+}
+#password {
+  font-size: 24px;
+  font-weight: 700;
+}
+.last-art {
+  background-color: #24232c;
+  padding: 1rem;
+}
+hgroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+h2 {
+  font-weight: 700;
+  font-size: 16px;
+}
+.letterLength {
+  font-weight: 700;
+  font-size: 24px;
+  color: #a4ffaf;
+}
+#characterLenght {
+  width: 100%;
+  accent-color: #a4ffaf;
+  height: 8px;
+  margin-bottom: 32px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#Symbols {
+  margin-bottom: 16px;
+}
+label {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  accent-color: #a4ffaf;
+}
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+}
+.div-strength {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #18171f;
+  padding: 14px 16px;
+}
+.strength {
+  font-weight: 700;
+  color: #817d92;
+  font-size: 16px;
+}
+.divDifficulté {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+.medium {
+  margin-right: 1rem;
+}
+.niveauDifficulté {
+  width: 10px;
+  height: 28px;
+  margin-right: 8px;
+  background-color: #f8cd65;
+}
+.niveauNon {
+  height: 28px;
+  width: 10px;
+  background-color: #18171f;
+  border: #e6e5ea 2px solid;
+}
+button {
+  border: none;
+}
+.submit {
+  height: 56px;
+  width: 100%;
+}
+#submit {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+  color: #24232c;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #a4ffaf;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  main {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+    main {
+      width: 25%;
+    }
+    #submit:hover {
+        background-color: #24232C;
+        color: #a4ffaf;
+        border: #a4ffaf 2px solid;
+    }
+  }
+  
